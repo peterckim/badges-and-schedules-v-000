@@ -4,7 +4,13 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
-  
+  list = []
+  count = 0
+  names.each do |name|
+    list[count] = name
+    count += 1
+  end
+  return list
 end
 
 def assign_rooms(names)
