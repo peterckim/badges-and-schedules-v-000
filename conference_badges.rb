@@ -13,10 +13,8 @@ def batch_badge_creator(names)
   return list
 end
 
-def assign_rooms(names)
-  list = []
-  count = 0
-  names.each do |name|
+def assign_rooms(list)
+  list.each_with_index do |phrase|
     list[count] = "Hello, #{name}! You'll be assigned to room #{count + 1}!"
 end
 
