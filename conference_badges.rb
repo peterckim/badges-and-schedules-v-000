@@ -16,7 +16,7 @@ end
 def assign_rooms(names)
   list = []
   names.each_with_index do |name|
-    list[count] = "Hello, #{name}! You'll be assigned to room #{count + 1}!"
+    list[index] = "Hello, #{name}! You'll be assigned to room #{index + 1}!"
 end
 
 def printer
