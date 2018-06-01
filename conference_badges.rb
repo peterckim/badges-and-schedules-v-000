@@ -5,10 +5,8 @@ end
 
 def batch_badge_creator(names)
   list = []
-  count = 0
-  names.each do |name|
-    list[count] = "Hello, my name is #{name}."
-    count += 1
+  names.each_with_index do |name, index|
+    list[index] = "Hello, my name is #{name}."
   end
   return list
 end
